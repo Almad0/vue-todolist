@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <title>TodoList</title>
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -12,7 +11,15 @@
 <body>
   <div id="root">
     <div class="container">
-  
+      <img id="logo" src="./assets/img/logo.png" alt="">
+      <div class="inputActions">
+        <input type="text" name="" value="" v-model="newTask" @keyup.enter="submitTask">
+        <button type="button" name="button" @click="submitTask" >Add</button>
+      </div>
+      <h3>Todo List</h3>
+      <ul>
+        <li v-for="task in list">{{task}}</li>
+      </ul>
 
     </div>
   </div>

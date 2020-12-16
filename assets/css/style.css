@@ -10,5 +10,24 @@ body{
 }
 
 .container {
-  
+  width: 100vw;
+  height: 100vh;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo{
+  width: 200px;
+  margin: 10px;
+}
+
+.inputActions{
+  margin: 10px;
+}
+
+h3{
+
 }
