@@ -20,16 +20,14 @@ let root = new Vue({
 
   },
 
-  created(){
-
-  },
-
   methods: {
 
     addTask: function(){
-      this.list.push(this.newTask);
-      this.newTask = ""
-      this.isData = true;
+      if (this.newTask.length > 4) {
+        this.list.push(this.newTask);
+        this.newTask = ""
+        this.isData = true;
+      }
     },
 
     removeTask: function (index) {
@@ -38,7 +36,7 @@ let root = new Vue({
         this.isData = false;
       }
     }
-}
+  }
 
 });
 
