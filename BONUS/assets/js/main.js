@@ -13,13 +13,17 @@ let root = new Vue({
   el: "#root",
 
   data: {
-
+    audio: true,
     isData: false,
     newTask: "",
     list: []
 
   },
 
+  // created(){
+  //   setTimeout(this.play, 1000);
+  // },
+  
   methods: {
 
     addTask: function(){
@@ -29,6 +33,10 @@ let root = new Vue({
         this.isData = true;
       }
     },
+
+    // play: function() {
+    //     this.audio.play();
+    // },
 
     removeTask: function (index) {
       let x = this.list.splice(index, 1);

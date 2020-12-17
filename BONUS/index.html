@@ -11,16 +11,20 @@
 <body>
   <div id="root">
     <div class="container">
-      <img id="logo" src="./assets/img/logo.png" alt="">
+
       <div class="inputActions">
         <input type="text" name="" value="" v-model="newTask" @keyup.enter="addTask">
-        <button type="button" name="button" @click="addTask" >Add</button>
       </div>
-      <h3>Todo List</h3>
+      <button type="button" name="button" @click="addTask">Aggiungi una taglia<img id="logo" src="./assets/img/logo.png" alt=""></button>
+      <h2>Lista delle Taglie Imperiali <span>&#8482;</span></h2>
       <ul v-if="isData">
-        <li class="list" v-for="(task, index) in list"> {{task}} <i class="fas fa-skull-crossbones" @click="removeTask(index)"></i> </li>
+        <li class="list" v-for="(task, index) in list"> {{task}} <i class="fab fa-galactic-republic" @click="removeTask(index)"></i> </li>
       </ul>
       <p v-else>- Lista Vuota -</p>
+
+      <audio id="audio" controls>
+        <source src="./assets/music/mandalorian_synth.mp3" type="audio/mp3">
+      </audio>
 
     </div>
   </div>

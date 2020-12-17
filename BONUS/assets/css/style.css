@@ -12,22 +12,54 @@ body{
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: lightblue;
+  background-image: url("../img/Sfondo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: space;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+button{
+  background-color: #FC25AE;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 10px;
+  line-height: 10px;
+  margin-bottom: 20px;
+}
+
+audio{
+  margin-top:20px;;
+  height: 20px;
+}
+
+input{
+  background-color: black;
+  color: #FC25AE;
+  width: 300px;
+  height: 50px;
+  font-size: 32px;
+}
+
 #logo{
-  width: 200px;
-  margin: 10px;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin-left: 15px;
+  width: 30px;
 }
 
 .inputActions{
+  margin-top: auto;
   margin: 10px;
 }
-
+h2{
+  color: white;
+  font-size: 2rem;
+}
 ul{
   list-style: none;
 }
@@ -35,16 +67,27 @@ ul{
 li{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: #FC25AE;
 }
 
 .list{
-  background-color: lightgrey;
+  background-color: rgba(0, 0, 0, 0.72);
+  border: 1px solid #c7007d;
+  color: white;
   min-width: 250px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 1.5rem;
+  line-height: 35px;
+  font-size: 1.1rem;
+  border-radius: 2px;
+
 }
 
 i{
+  margin: 10px;
   cursor: pointer;
+  vertical-align: middle;
+}
+
+p{
+  color: white;
 }
