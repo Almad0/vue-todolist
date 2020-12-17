@@ -28,6 +28,23 @@ body{
   margin: 10px;
 }
 
-h3{
+ul{
+  list-style: none;
+}
 
+li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.list{
+  background-color: lightgrey;
+  min-width: 250px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+
+i{
+  cursor: pointer;
 }
